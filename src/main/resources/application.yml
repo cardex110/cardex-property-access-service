@@ -1,1 +1,8 @@
+spring:
+  application:
+    name: cardex-property-access-service
+  config:
+    import: "optional:configserver:"
 
+server:
+  port: ${port:8100}
