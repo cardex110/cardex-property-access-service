@@ -14,6 +14,9 @@ public class PropertyFileAccessController {
     @Autowired
     PropertyAccessBean propertyAccessBean;
 
+    public enum RequestMethod {
+        GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS, TRACE
+    }
     @GetMapping("accessPropertyFile")
     public PropertyAccessValue accessPropertyFile(){
 
